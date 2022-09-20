@@ -1,0 +1,36 @@
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+    
+    &__logo {
+        padding-bottom: 6px;
+    }
+
+    &__nav {
+        align-self: center;
+        justify-self: center;
+    }
+
+    &__nav-link {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+        transition-property: color;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+}

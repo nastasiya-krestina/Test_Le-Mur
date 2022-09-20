@@ -1,0 +1,288 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: local('Proxima Nova-Regular'),
+		url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    cursor: pointer;
+}
+  
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+img {
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+:root {
+    --main-color: #162831;
+    --button-color: #018ABE;
+}
+  
+strong {
+    font-weight: 700;
+}
+
+h1,h2, h3 {
+    font-family: 'El Messiri', sans-serif;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Proxima Nova', sans-serif !important;
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+
+.container {
+    width: 1298px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container:before {
+    content: none;
+}
+
+.container::after {
+    display: table;
+    content: none;
+}
+
+.button {
+    padding: 9px 15px;
+    color: #fff;
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 100px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.title-marker {
+    margin-right: 45px;
+}
+
+.heading {
+    margin: 0;
+    margin-right: 45px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 58.8px;
+    letter-spacing: 0.6;
+}
+
+.swiper {
+    z-index: 1;
+    padding-bottom: 60px;
+}
+
+.swiper-wrapper {
+    align-items: center!important;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    padding: 50px 60px 56px 60px;
+    background-color: var(--button-color);
+    border-radius: 10px;
+}
+
+.swiper-slide-prev {
+    scale: 0.9;
+    padding: 40px 45px;
+    opacity: 0.4;
+}
+
+.swiper-slide-next {
+    scale: 0.9;
+    padding: 40px 45px;
+    opacity: 0.4;
+}
+
+.swiper-pagination {
+	position: relative;
+	margin: 0;
+}
+
+.swiper-pagination-bullet {
+	width: 16px;
+	height: 16px;
+	background: #FFFFFF;
+    opacity: 0.4;
+    border-radius: 3px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #FFFFFF;
+    opacity: 1;
+    border-radius: 3px;
+}
+  
+[class*="controls-pane"] {
+    display: none;
+}
+  
+[class*="copyrights-pane"] {
+    display: none;
+}
+
+.news__data {
+    padding: 6px 12px;
+    background-color: var(--button-color);
+    border-radius: 5px;
+    margin-bottom: 137px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.4;
+}
+
+.form__content {
+    display: none;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+    padding: 50px 60px;
+    background-color: var(--button-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.form__button {
+    background-color: #fff;
+    color: var(--button-color);
+    border: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.form__title {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.form__label {
+    width: 100%;
+}
+
+.form__label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form__text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.modal-header {
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+
+.modal-header::before {
+    text-align: center;
+}
+
+.modal-footer {
+    padding: 0;
+    border: none;
+}
+
+.formSend {
+    margin: 0;
+}
+
+.form__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.js-validate-error-label {
+    position: absolute;
+    top: -40px;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.error {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    opacity: 0.4;
+}
+

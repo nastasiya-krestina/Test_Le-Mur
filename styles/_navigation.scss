@@ -1,0 +1,76 @@
+.navigation {
+    padding-bottom: 90px;
+
+    &__container {
+        max-width: 1296px;
+        margin: 0 auto;        
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2);
+        column-gap: 24px;
+    }
+
+    &__map {
+        grid-area: 1 / 1 / 3 / 9;        
+        margin: 0;
+        padding-right: 24px;
+    }
+      
+    &__my-map {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+     
+    &__list {
+        grid-area: 1 / 9 / 3 / 13;
+    }
+
+    &__card {
+        grid-area: 1 / 9 / 2 / 13;
+        width: 100%;
+        padding: 35px 45px;
+        background-color: var(--button-color);
+        border-radius: 10px;
+    }
+
+    &__card:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &__card-contain {
+        padding-bottom: 30px;
+    }
+
+    &__title {
+        padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__item:not(:last-child) {
+        padding-bottom: 21px;
+    }
+
+    &__marker {
+        margin-right: 20px;
+    }
+
+    &__button {
+        background-color: #fff;
+        color: var(--button-color);
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+}

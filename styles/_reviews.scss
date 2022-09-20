@@ -1,0 +1,28 @@
+.reviews {
+    padding-bottom: 210px;
+
+    &__container {
+        position: relative;
+        max-width: 100%;
+        width: auto;
+        margin: 0 92px;
+    }
+
+    &__card-name {
+        padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    &__card-text {
+        padding-bottom: 16px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__card-text-last {
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,74 @@
+.price {
+    padding-bottom: 150px;
+
+    &__container {
+        font-family: 'El Messiri', sans-serif;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2);
+        column-gap: 24px;
+    }
+
+    &__title {
+        grid-area: 1 / 1 / 2 / 13;
+    }
+
+    &__left {
+        grid-area: 2 / 2 / 3 / 5;
+        align-self: center;
+    }
+
+    &__center {
+        grid-area: 2 / 5 / 3 / 6;
+        align-self: center;
+        text-align: right;
+    }
+
+    &__right {
+        grid-area: 2 / 7 / 3 / 12;    
+    }
+
+    &__services-text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    &__services-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__services-item:not(:last-child) {
+        padding-bottom: 31px;   
+    }
+
+    &__services-marker {
+        margin-right: 20px;
+    }
+
+    &__cost-text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    &__cost-item:not(:last-child) {
+        padding-bottom: 31px;   
+    }
+
+    &__item-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        padding-bottom: 30px;
+    }
+
+    &__img-text {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 29px;
+    }
+}

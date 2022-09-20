@@ -1,0 +1,19 @@
+.footer {
+    padding-bottom: 30px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__made-by {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
